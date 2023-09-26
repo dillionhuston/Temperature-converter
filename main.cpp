@@ -3,19 +3,21 @@
 // This is very crap code but still its a temp converter!
 
 int main() {
+using namspace std;
 
-
+	struct var {
 	double temp;
 	char unit;
+}
 
 
 	std::cout << "Temperature conversion\n";
 	std::cout << "What unit would you like to convert too?\n";
-	std::cin >> unit;
+	std::cin >> var.unit;
 
 
 
-	if (unit == 'F' || unit == 'f') {
+	if (var.unit == 'F' || var.unit == 'f') {
 
 		std::cout << "Enter the temp in celsius";
 		std::cin >> temp;
