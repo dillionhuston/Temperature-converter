@@ -1,14 +1,19 @@
 #include <iostream>
 
-// This is very crap code but still its a temp converter!
+// This is very crap code but still its a temp converter
 
-int main() {
-using namspace std;
-
+// define outside scope 
 	struct var {
 	double temp;
 	char unit;
 }
+
+
+
+
+int main() {
+using namspace std;
+
 
 
 	std::cout << "Temperature conversion\n";
@@ -22,19 +27,19 @@ using namspace std;
 		std::cout << "Enter the temp in celsius";
 		std::cin >> temp;
 
-		temp = (1.8 * temp + 32);
+		var.temp = (1.8 * var.temp + 32);
 
-		std::cout << "Temperature is: " << temp << "F\n";
+		std::cout << "Temperature is: " << var.temp << "F\n";
 
 
 	}
 
-	else if (unit == 'C' || unit == 'c') {
+	else if (var.unit == 'C' || var.unit == 'c') {
 		std::cout << "Enter temp in farenheight";
-		std::cin >> temp;
+		std::cin >> var.temp;
 
-		temp = (temp - 32) / 1.8;
-		std::cout << "Temperature is: " << temp << "C\n";
+		var.temp = (var.temp - 32) / 1.8;
+		std::cout << "Temperature is: " << var.temp << "C\n";
 	}
 
 
